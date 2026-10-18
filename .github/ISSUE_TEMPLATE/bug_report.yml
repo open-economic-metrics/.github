@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a reproducible defect in software, data processing, or published results.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include credentials, private data, or security exploit details. For vulnerabilities, use the repository's security policy."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Include the incorrect behavior and its impact.
+      placeholder: Describe the observed result.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can it be reproduced?
+      description: Include the smallest known steps, inputs, or query needed to reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior or reference result
+      description: If statistical, identify the authoritative published result and relevant observation period.
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version, release, or dataset vintage
+      placeholder: e.g., release/tag and source observation year
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence and limitations
+      description: Provide public links, non-sensitive logs, or the checks you performed.
+    validations:
+      required: false

@@ -1,0 +1,32 @@
+name: Research or methodology question
+description: Investigate a statistical definition, source, validation gap, or measurement feasibility.
+labels: ["research"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question or decision
+      description: State the specific unknown and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: baseline
+    attributes:
+      label: Established baseline and sources
+      description: Identify relevant authoritative definitions, releases, citations, or why none is known.
+    validations:
+      required: false
+  - type: textarea
+    id: proposed_work
+    attributes:
+      label: Proposed investigation and completion criterion
+      description: Describe the smallest reproducible check and what result would resolve the question.
+    validations:
+      required: false
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Methodological, legal, or data limitations
+      description: Note survey scope, geography, uncertainty, data access, licensing, or redistribution constraints.
+    validations:
+      required: false
